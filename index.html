@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sagar H Photography</title>
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#111;
+color:white;
+text-align:center;
+}
+
+header{
+padding:40px;
+background:black;
+}
+
+h1{
+font-size:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:#ff4d4d;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sagar H Photography</h1>
+<p>Official Photoshoot Portfolio</p>
+<button onclick="location.href='mailto:yourmail@gmail.com'">
+Book a Photoshoot
+</button>
+</header>
+
+<section class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+</section>
+
+</body>
+</html>
