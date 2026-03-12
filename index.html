@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sagar H Photography</title>
-<style>
-body{
-font-family: Arial;
-margin:0;
-background:#111;
-color:white;
-text-align:center;
-}
-
-header{
-padding:40px;
-background:black;
-}
-
-h1{
-font-size:40px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-padding:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-button{
-padding:12px 25px;
-font-size:18px;
-background:#ff4d4d;
-border:none;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>Sagar H Photography</h1>
-<p>Official Photoshoot Portfolio</p>
-<button onclick="location.href='mailto:yourmail@gmail.com'">
-Book a Photoshoot
-</button>
+<nav>
+<h1 class="logo">Sagar H Photography</h1>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
 
-<section class="gallery">
+<section id="home" class="hero">
+<h2>Capturing Moments</h2>
+<p>Professional Photography Portfolio</p>
+<button onclick="bookShoot()">Book a Photoshoot</button>
+</section>
+
+<section id="portfolio">
+<h2>My Portfolio</h2>
+
+<div class="gallery">
+
 <img src="photo1.jpg">
 <img src="photo2.jpg">
 <img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+
+</div>
 </section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Hi, I'm Sagar H. I'm passionate about photography and capturing 
+beautiful moments. My portfolio includes portraits, events, 
+creative shoots, and street photography.
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact / Booking</h2>
+
+<p>Want to book a photoshoot? Click below.</p>
+
+<button onclick="contactMe()">Contact Me</button>
+
+</section>
+
+<footer>
+<p>© 2026 Sagar H Photography</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
